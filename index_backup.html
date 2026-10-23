@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0f">
+  <title>For my favourite sinner ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <main class="card">
+    <div class="topline"><span>PERSONAL EDITION</span><span id="counter">01 / 05</span></div>
+
+    <section class="screen active" data-screen="0">
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <div class="car-scene" aria-label="Silhouette of a silver car with amber headlights">
+        <div class="halo"></div>
+        <div class="car">
+          <div class="roof"></div><div class="window"></div>
+          <div class="body"></div><div class="front"></div>
+          <div class="wheel wheel-left"></div><div class="wheel wheel-right"></div>
+          <div class="lamp lamp-left"></div><div class="lamp lamp-right"></div>
+        </div>
+        <div class="road"></div>
+      </div>
+      <h1>Hello, <em>sinner.</em></h1>
+      <p class="copy">Ты думал, я оставлю тебя без маленького сюрприза?</p>
+      <button class="primary" data-next>Open your little gift <span>♡</span></button>
+      <button class="sound-toggle" id="engineBtn" type="button">↗ Start the engine</button>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <p class="eyebrow">02 — YOUR PRETTY LITTLE OBSESSION</p>
+      <div class="mini-car">E60 <span>///</span> 5 SERIES</div>
+      <h2>Well, look at you.</h2>
+      <p class="copy">Серебристая, с янтарными глазками… Ну, у тебя определённо есть вкус, негодник.</p>
+      <p class="small-note">Твоя любимая машина — и маленькая открытка от меня.</p>
+      <button class="primary" data-next>Keep going <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="2">
+      <p class="eyebrow">03 — A LITTLE CONFESSION</p>
+      <div class="heart-mark">♡</div>
+      <h2>Can I tell you something?</h2>
+      <p class="copy">Мне не нужен особенный повод, чтобы захотеть сделать тебе что-то приятное.</p>
+      <p class="copy">Я просто рада, что ты есть в моей жизни. И хотела, чтобы ты об этом знал.</p>
+      <button class="primary" data-next>One more thing <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="3">
+      <p class="eyebrow">04 — JUST FOR YOUR SMILE</p>
+      <h2>A few little wishes.</h2>
+      <div class="wish-list">
+        <p><span>01</span> Побольше моментов, которые делают тебя счастливым.</p>
+        <p><span>02</span> Людей рядом, с которыми можно быть собой.</p>
+        <p><span>03</span> Мечт, которые однажды станут реальностью.</p>
+      </div>
+      <p class="copy">И поменьше поводов переживать, мой маленький грешник. ♡</p>
+      <button class="primary" data-next>Last little note <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="4">
+      <p class="eyebrow">05 — MADE WITH LOVE</p>
+      <div class="final-glow">♡</div>
+      <h2>Take care, my sinner.</h2>
+      <p class="copy">Спасибо, что ты есть. За улыбки, наши маленькие приколы и просто за то, что ты — это ты.</p>
+      <p class="copy">Надеюсь, эта маленькая штука заставила тебя улыбнуться. Ты заслуживаешь хорошего. 🩶</p>
+      <p class="signature">made just for you <span>♡</span></p>
+      <button class="primary" id="replayBtn">Read it again ↺</button>
+    </section>
+
+    <div class="bottomline"><span>BMW E60 · AMBER LIGHTS</span><span>♡</span></div>
+  </main>
+  <audio id="music" src="assets/music.mp3" loop preload="none"></audio>
+  <audio id="engine" src="assets/engine.mp3" preload="none"></audio>
+  <div class="audio-controls">
+    <button id="musicBtn" type="button" aria-label="Toggle music">♫ Music: off</button>
+    <span>Лучше надеть наушники</span>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

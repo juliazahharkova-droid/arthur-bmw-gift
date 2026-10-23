@@ -1,0 +1,172 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0f">
+  <title>For You, My Dear ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <main class="card">
+    <div class="topline">
+      <span>MADE JUST FOR YOU</span>
+      <span id="counter">01 / 03</span>
+    </div>
+
+    <!-- SCREEN 1: BMW -->
+    <section class="screen active" data-screen="0">
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+
+     <div class="car-scene photo-scene">
+  <div class="halo"></div>
+  <img
+    class="arthur-car"
+    src="assets/arthur-bmw.png"
+    alt="Любимый грешник и его BMW E60"
+  >
+  <div class="road"></div>
+</div>
+
+      <h1>Hello, <em>sinner.</em></h1>
+      <p class="copy">
+        Для одного очень красивого грешника.
+      </p>
+      <p class="copy">
+        Ты думал, я оставлю тебя без маленького сюрприза?
+      </p>
+
+      <button class="primary" data-next>
+        Open your little gift <span>♡</span>
+      </button>
+
+      <button class="sound-toggle" id="engineBtn" type="button">
+        ↗ Start the engine
+      </button>
+    </section>
+
+    <!-- SCREEN 2: WISHES -->
+    <section class="screen" data-screen="1">
+      <p class="eyebrow">02 — A LITTLE WISH FOR YOU</p>
+
+      <div class="heart-mark">♡</div>
+      <h2>A few little wishes.</h2>
+
+      <div class="wish-list">
+        <p>
+          <span>01</span>
+          Побольше моментов, которые делают тебя счастливым.
+        </p>
+        <p>
+          <span>02</span>
+          Пусть твои мечты постепенно становятся реальностью,
+          а цели превращаются в достижения.
+        </p>
+        <p>
+          <span>03</span>
+          Пусть работа приносит хорошие результаты,
+          а тренировки помогают становиться сильнее
+          и увереннее в себе.
+        </p>
+        <p>
+          <span>04</span>
+          Я надеюсь, что впереди у тебя будет много поводов
+          улыбаться даже в самые обычные дни.
+        </p>
+        <p>
+          <span>05</span>
+          И помни, что тебе не обязательно всегда быть сильным
+          и со всем справляться в одиночку.
+        </p>
+      </div>
+
+      <button class="primary" data-next>
+        One little letter for you <span>♡</span>
+      </button>
+    </section>
+
+    <!-- SCREEN 3: LOVE LETTER -->
+    <section class="screen" data-screen="2">
+      <p class="eyebrow">03 — A LITTLE LETTER</p>
+
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter">
+          <span class="letter-heart">♡</span>
+          <p>Мой дорогой…</p>
+          <span class="letter-line"></span>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-seal">♡</div>
+      </div>
+
+      <h2>A letter from me to you.</h2>
+      <p class="copy">
+        Здесь для тебя кое-что особенное.
+      </p>
+
+      <button class="primary" id="openLetterBtn" type="button">
+        Open your letter <span>♡</span>
+      </button>
+
+      <div class="letter-content" id="letterContent" hidden>
+        <h2>Мой дорогой… 🩶</h2>
+
+        <p class="copy">
+          Я хочу, чтобы ты знал, как много ты для меня значишь.
+          Мне дороги наши разговоры, твой голос, наши маленькие
+          шутки и те моменты, когда мы можем просто быть рядом,
+          даже если нас разделяет расстояние.
+        </p>
+
+        <p class="copy">
+          Мне хочется видеть тебя счастливым, слышать, как ты
+          рассказываешь о своих успехах, и знать, что у тебя всё
+          постепенно складывается так, как ты хочешь.
+        </p>
+
+        <p class="copy">
+          Я верю в тебя и искренне желаю, чтобы у тебя получилось
+          всё, к чему ты стремишься. И даже если иногда что-то
+          будет идти не по плану, я надеюсь, что ты не перестанешь
+          верить в себя и помнить, какой ты замечательный человек.
+        </p>
+
+        <p class="copy">
+          Я очень рада, что ты появился в моей жизни. И мне
+          хочется, чтобы впереди у нас было ещё много тёплых
+          разговоров, совместных вечеров, смеха и воспоминаний,
+          которые будут принадлежать только нам.
+        </p>
+
+        <p class="signature">С нежностью и любовью… 🩷</p>
+
+        <div class="final-glow">♡</div>
+        <h2>Береги себя, мой дорогой.</h2>
+        <p class="signature">made with love, just for you ♡</p>
+      </div>
+    </section>
+
+    <div class="bottomline">
+      <span>BMW E60 · AMBER LIGHTS</span>
+      <span>♡</span>
+    </div>
+  </main>
+
+  <audio id="music" src="assets/music.mp3" loop preload="none"></audio>
+  <audio id="engine" src="assets/engine.mp3" preload="none"></audio>
+
+  <div class="audio-controls">
+    <button id="musicBtn" type="button" aria-label="Toggle music">
+      ♫ Music: off
+    </button>
+    <span>Лучше надеть наушники</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
